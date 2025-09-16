@@ -94,10 +94,11 @@
         },
         "MALLISTER ASCENDANCY": {
             "effect": [
-                "Gain the following based on which Condition tokens are on this unit *(effects are cumulative)*:",
-                "• **Panicked:** Defender suffers +2 Wounds from failed Panic Test Rolls.",
-                "• **Vulnerable:** Defender loses any Abilities until the end of the Turn.",
-                "• **Weakened:** Before rolling Attack Dice this unit restores 2 Wounds."
+                "Each time this unit performs a Melee Attack, before rolling Attack Dice choose 1, for each Condition token on this unit, choose +1:",
+                "• **Precision**",
+                "• **Critical Blow**",
+                "• **Sundering**",
+                "• This unit restores 2 Wounds."
             ],
             "icons": [
                 "melee"
@@ -154,7 +155,7 @@
         },
         "RIGHTS TO HARRENHAL": {
             "effect": [
-                "Your maximum Tactics Hand size is increased by +1. You start the game with 4 cards and may draw up to 4 cards when re-filling your hand. When Shella is destroyed, your opponent gains +1 Victory Point."
+                "Increase your Tactics Hand Size limit by +1. You start the game with 4 cards and may draw up to 4 cards when re-filling your hand. When Shella is destroyed, your opponent gains +1 Victory Point."
             ],
             "icons": [
                 "wounds"
@@ -190,6 +191,14 @@
             ],
             "icons": [
                 "ranged"
+            ]
+        },
+        "VETERANCY": {
+            "effect": [
+                "This unit may not be targeted by enemy Tactics Cards or Influenced by enemy NCUs. While engaged with this unit, enemies may not be the target of Tactics Cards or influenced by friendly NCUs."
+            ],
+            "icons": [
+                "wounds"
             ]
         },
         "WEIRWOOD BOW": {
@@ -247,7 +256,7 @@
             "id": "tully-cavaliers",
             "name": "Tully Cavaliers",
             "faction": "tully",
-            "version": "S06 V1",
+            "version": "S06 V2",
             "role": "unit",
             "abilities": [
                 "Cavalry",
@@ -260,7 +269,7 @@
                     "type": "melee",
                     "hit": 3,
                     "dice": [
-                        6,
+                        5,
                         4
                     ]
                 }
@@ -279,7 +288,7 @@
             "id": "riverrun-defenders",
             "name": "Riverrun Defenders",
             "faction": "tully",
-            "version": "S06 V1",
+            "version": "S06 V2",
             "role": "unit",
             "abilities": [
                 "Order: Ready! Aim! Release!",
@@ -313,7 +322,7 @@
             "cost": 6,
             "tray": "infantry",
             "fluff": {
-                "lore": "The ever-vigilant Riverrun Defenders are trained to rain down precise volleys from the arrow slits crowning the battlements of the ancient seat of House Tully. Should besiegers breach the inner courtyard, the Defenders will be eager to cross-blades with their foes. When strategy dictates that these soldiers must sally forth from the castle walls, they bring with them towering pavise shields upon which to brace their crossbows."
+                "lore": "The ever-vigilant Riverrun Defenders are trained to rain down precise volleys from the arrow slits crowning the battlements of the ancient seat of House Tully. Should besiegers breach the inner courtyard, the Defenders will be eager to cross blades with their foes. When strategy dictates that these soldiers must sally forth from the castle walls, they bring with them towering pavise shields upon which to brace their crossbows."
             },
             "icon": "infantry"
         },
@@ -353,7 +362,7 @@
             "id": "blackfishs-riders",
             "name": "Blackfish's Riders",
             "faction": "tully",
-            "version": "S06 V1",
+            "version": "S06 V2",
             "role": "unit",
             "abilities": [
                 "Cavalry",
@@ -387,7 +396,7 @@
             "tray": "cavalry",
             "back_text": [
                 {
-                    "text": "*May only be fielded in an army containing Brynden Tully, Knight of the Gate. He must be attached to this unit at no cost.*",
+                    "text": "*May only be fielded in an army containing Brynden Tully, Outrider's Bane. He must be attached to this unit at no cost.*",
                     "name": "Character"
                 }
             ],
@@ -456,7 +465,7 @@
             "cost": 7,
             "tray": "cavalry",
             "fluff": {
-                "lore": "When the Lords of the Riverlands call their banners, the Knights of the Trident don heavy plate armor and mount their sturdy destriers. While foreign steeds may move uncertainly in muddy terrain or shallow fords, these trained warhorses stand sure-footed to protect the infantry around them. Their experienced riders often direct the tides of battle from atop the impressive mounts."
+                "lore": "When the Lords of the Riverlands call their banners, the Knights of the Trident don heavy plate armor and mount their sturdy destriers. While foreign steeds may move uncertainly in muddy terrain or shallow fords, these trained warhorses stand sure-footed to protect the infantry around them. Their experienced riders often direct the tides of battle from atop their impressive mounts."
             },
             "icon": "cavalry"
         },
@@ -538,7 +547,7 @@
             "id": "house-blackwood-prowlers",
             "name": "House Blackwood Prowlers",
             "faction": "tully",
-            "version": "S06 V1",
+            "version": "S06 V2",
             "role": "unit",
             "abilities": [
                 "Weirwood Bow",
@@ -573,7 +582,7 @@
             "tray": "infantry",
             "back_text": [
                 {
-                    "text": "*If your army contains Jonos Bracken or any House Bracken unit, this unit's cost is increased by 1.*",
+                    "text": "*If your army contains Jonos Bracken or any House Bracken unit, the cost of the first Rivaly unit is increased by 1.*",
                     "name": "Rivalry"
                 }
             ],
@@ -586,7 +595,7 @@
             "id": "house-bracken-dragoons",
             "name": "House Bracken Dragoons",
             "faction": "tully",
-            "version": "S06 V1",
+            "version": "S06 V2",
             "role": "unit",
             "abilities": [
                 "Glaive",
@@ -605,13 +614,13 @@
                 }
             ],
             "defense": 5,
-            "morale": 7,
+            "morale": 6,
             "speed": 6,
             "cost": 6,
             "tray": "cavalry",
             "back_text": [
                 {
-                    "text": "*If your army contains Tytos Blackwood or any House Blackwood unit, this unit's cost is increased by 1.*",
+                    "text": "*If your army contains Tytos Blackwood or any House Blackwood unit, the cost of the first Rivaly unit is increased by 1.*",
                     "name": "Rivalry"
                 }
             ],
@@ -624,7 +633,7 @@
             "id": "house-mallister-eagle-guardians",
             "name": "House Mallister Eagle Guardians",
             "faction": "tully",
-            "version": "S06 V1",
+            "version": "S06 V2",
             "role": "unit",
             "abilities": [
                 "Order: Eagle's Deliverance",
@@ -666,7 +675,7 @@
                     "name": "The Seat of Riverrun",
                     "effect": [
                         "Each time Hoster claims [LETTER] draw 1 additional Tactics card.",
-                        "Each time Hoster claims [HORSE] the unit targeted by this zone for a Meneuver or Retreat Action gains +1 [MOVEMENT] until the end of the Turn."
+                        "Each time Hoster claims [HORSE] the unit targeted by this zone for a Maneuver or Retreat Action gains +1 [MOVEMENT] until the end of the Turn."
                     ]
                 }
             ],
@@ -686,7 +695,7 @@
             "id": "edmure-tully-n",
             "name": "Edmure Tully",
             "faction": "tully",
-            "version": "S06 V1",
+            "version": "S06 V2",
             "role": "ncu",
             "title": "Heir of Riverrun",
             "abilities": [
@@ -694,9 +703,9 @@
                     "name": "Eager for Glory",
                     "effect": [
                         "Each time Edmure Claims [LETTER] you may replace that zone's effect with:",
-                        "*1 friendly unit performs 1 Melee Attack Action.*",
+                        "*1 friendly unit performs 1 Melee Attack Action using its lowest Attack Die Value.*",
                         "Each time Edmure Claims [HORSE] you may replace that zone's effect with:",
-                        "*1 friendly unit performs 1 Charge Action.*"
+                        "*1 friendly unit performs 1 Charge Action using its lowest Attack Die Value.*"
                     ]
                 }
             ],
@@ -740,7 +749,7 @@
                     "effect": [
                         "Marq beins the game with 3 Order tokens.",
                         "Each time a friendly unit is targeted by [CROWN] you may remove 1 Order token. If you do, your opponent must select a different target for the Panic Test if possible.",
-                        "Each time Marq claims [CROWN] you may remove 1 Order token from him. The enemy unit targeted by [CROWN] suffers an additional -1 to Panic Test Dice and +1 Wound on failure."
+                        "Each time Marq claims [CROWN] you may remove 1 Order token from him. The enemy unit targeted by [CROWN] suffers an additional -1 to their roll and +1 Wound on failure."
                     ]
                 }
             ],
@@ -758,7 +767,7 @@
             "id": "rymund-the-rhymer-n",
             "name": "Rymund the Rhymer",
             "faction": "tully",
-            "version": "S06 V1",
+            "version": "S06 V2",
             "role": "ncu",
             "title": "Clever Harper",
             "abilities": [
@@ -766,7 +775,7 @@
                     "name": "Songs of Valor",
                     "effect": [
                         "**Influence** (*When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round*):",
-                        "Each time Rymund Influences a Tully Infantry Unit, that unit gains +1 to Hit when performing Melee Attacks and +1 to Morale Test rolls."
+                        "Each time Rymund Influences a Tully Infantry Unit, that unit's Melee Attack To Hit Value becomes 3+ and gains +1 to Morale Test rolls."
                     ]
                 }
             ],
@@ -831,7 +840,7 @@
                 {
                     "name": "Last of Her Line",
                     "effect": [
-                        "Your maximum Tactics Hand size is increased by +1. You start the game with 4 cards and may draw up to 4 cards when re-filling your hand.",
+                        "Increase your Tactics Hand Size limit by +1. You start the game with 4 cards and may draw up to 4 cards when re-filling your hand.",
                         "Once per game, when an enemy is performing a Panic Test, before rolling Panic Test Dice:",
                         "That enemy becomes **Panicked** and suffers +1 Wound on failure."
                     ]
@@ -900,11 +909,11 @@
             "id": "brynden-tully-c",
             "name": "Brynden Tully",
             "faction": "tully",
-            "version": "S06 V1",
+            "version": "S06 V2",
             "role": "attachment",
             "title": "Warden of the Southern Marches",
             "abilities": [
-                "Boisterous Charisma",
+                "Veterancy",
                 "Order: Taunt"
             ],
             "tray": "infantry",
@@ -1052,14 +1061,14 @@
             "id": "brynden-tully-ca",
             "name": "Brynden Tully",
             "faction": "tully",
-            "version": "S06 V1",
+            "version": "S06 V2",
             "role": "attachment",
-            "title": "Knight of the Gate",
+            "title": "Outrider's Bane",
             "abilities": [
                 "Order: Sentinel",
                 "Pathfinder"
             ],
-            "cost": 2,
+            "cost": 1,
             "tray": "cavalry",
             "character": true,
             "icon": "cavalry",
@@ -1147,11 +1156,12 @@
             "id": "marq-piper-a",
             "name": "Marq Piper",
             "faction": "tully",
-            "version": "S06 V1",
+            "version": "S06 V2",
             "role": "attachment",
             "title": "Heir of Pinkmaiden",
             "abilities": [
-                "Reckless Strikes"
+                "Reckless Strikes",
+                "Go Down Fighting"
             ],
             "cost": 1,
             "tray": "infantry",
@@ -1165,10 +1175,11 @@
             "id": "robin-ryger-a",
             "name": "Robin Ryger",
             "faction": "tully",
-            "version": "S06 V1",
+            "version": "S06 V2",
             "role": "attachment",
             "title": "Captain of the Guard",
             "abilities": [
+                "Order: Hold the Line!",
                 "Hardened"
             ],
             "cost": 1,
@@ -1264,13 +1275,12 @@
             "id": "mallister-shield-bearer-a",
             "name": "Mallister Shield Bearer",
             "faction": "tully",
-            "version": "S06 V1",
+            "version": "S06 V2",
             "role": "attachment",
             "abilities": [
-                "Unyielding",
                 "Order: Resilience"
             ],
-            "cost": 2,
+            "cost": 1,
             "tray": "infantry",
             "icon": "infantry"
         },
@@ -1278,10 +1288,11 @@
             "id": "riverrun-sentry-a",
             "name": "Riverrun Sentry",
             "faction": "tully",
-            "version": "S06 V1",
+            "version": "S06 V2",
             "role": "attachment",
             "abilities": [
-                "Order: Mark Target"
+                "Order: Mark Target",
+                "Rally Banner"
             ],
             "cost": 1,
             "tray": "infantry",
@@ -1305,12 +1316,13 @@
             "id": "eagle-knight-captain-a",
             "name": "Eagle Knight Captain",
             "faction": "tully",
-            "version": "S06 V1",
+            "version": "S06 V2",
             "role": "attachment",
             "abilities": [
-                "Order: Adaptive Planning"
+                "Order: Adaptive Planning",
+                "Order: Sentinel"
             ],
-            "cost": 1,
+            "cost": 2,
             "tray": "infantry",
             "icon": "infantry"
         },
@@ -1318,10 +1330,11 @@
             "id": "ravens-talon-a",
             "name": "Raven's Talon",
             "faction": "tully",
-            "version": "S06 V1",
+            "version": "S06 V2",
             "role": "attachment",
             "abilities": [
-                "Agile"
+                "Agile",
+                "Pathfinder"
             ],
             "cost": 1,
             "tray": "infantry",
@@ -1340,10 +1353,11 @@
             "id": "stone-hedge-stallion-a",
             "name": "Stone Hedge Stallion",
             "faction": "tully",
-            "version": "S06 V1",
+            "version": "S06 V2",
             "role": "attachment",
             "abilities": [
-                "Counterstrike"
+                "Counterstrike",
+                "Weaken Resolve"
             ],
             "cost": 1,
             "tray": "cavalry",
@@ -1420,7 +1434,7 @@
                 {
                     "trigger": "Start of any Round:",
                     "effect": [
-                        "Your opponent chooses 1 of your Attachments. You choose 1 of your opponent's Attachments and place 1 Condition token on that unit. Until the end of the Round both Attachments lose all Abilities. If either Attachment is killed during the Round, the ramaining Attachment regains its Abilities."
+                        "Your opponent chooses 1 of your Attachments. You choose 1 of your opponent's Attachments and place 1 Condition token on that unit. Until the end of the Round both Attachments lose all Abilities. If either Attachment is killed during the Round, the remaining Attachment regains its Abilities."
                     ]
                 },
                 {
@@ -1570,15 +1584,14 @@
             "id": "blackfishs-infamy",
             "name": "Blackfish's Infamy",
             "faction": "tully",
-            "version": "S06 V1",
+            "version": "S06 V2",
             "role": "tactics",
             "text": [
                 {
                     "trigger": "When an enemy in Long Range of Brynden Tully's unit Activates:",
                     "effect": [
-                        "Attach this card to that unit until Brynden Tully's unit is destroyed.",
-                        "If that unit performs an Attack or Charge Action this turn, before rolling Attack Dice, they become **Vulnerable** and then suffer 3 Hits.",
-                        "If you Control [HORSE] that unit also becomes **Weakened**."
+                            "If that unit performs an Attack or Charge Action this turn, before rolling Attack Dice, they become **Vulnerable** and then suffer 3 Hits.",
+                            "If you Control [HORSE] that unit also becomes **Weakened**."
                     ]
                 },
                 {
@@ -1603,7 +1616,7 @@
                     "trigger": "When an enemy in Long Range of Brynden Tully's unit Activates:",
                     "effect": [
                         "Target 1 friendly unit engaged that with that enemy. It performs 1 Retreat Action.",
-                        "If you Control (Horses) that enemy may not pivot and becomes **Weakened**."
+                        "If you Control [HORSE] that enemy may not pivot and becomes **Weakened**."
                     ]
                 },
                 {
@@ -1627,7 +1640,7 @@
                 {
                     "trigger": "Start of a friendly Turn:",
                     "effect": [
-                        "Target 1 firendly Combat Unit and attach this card to it until the end of the game. While attached, this unit's Melee Attacks gain the following bonsuses, based on the Game Round *(effects are cumulative)*:",
+                        "Target 1 friendly Combat Unit and attach this card to it until the end of the game. While attached, this unit's Melee Attacks gain the following bonsuses, based on the Game Round *(effects are cumulative)*:",
                         "**3+:** May re-roll any Misses",
                         "**4+: Sundering**",
                         "**5+: Critical Blow**",
@@ -1692,7 +1705,7 @@
                 }
             ],
             "commander": {
-                "id": "hoster-tully-c"
+                "id": "hoster-tully-n"
             }
         },
         {
@@ -1711,7 +1724,7 @@
                 }
             ],
             "commander": {
-                "id": "hoster-tully-c"
+                "id": "hoster-tully-n"
             }
         },
         {
@@ -1730,7 +1743,7 @@
                 }
             ],
             "commander": {
-                "id": "hoster-tully-c"
+                "id": "hoster-tully-n"
             }
         },
         {
@@ -1815,13 +1828,13 @@
             "id": "sortie-tactics",
             "name": "Sortie Tactics",
             "faction": "tully",
-            "version": "S06 V1",
+            "version": "S06 V2",
             "role": "tactics",
             "text": [
                 {
                     "trigger": "After an enemy completes a Melee Atack:",
                     "effect": [
-                        "Target 1 friendly House Blackwood unit in Long Range of the Defender. It performs 1 Charge or Retreat Action:"
+                        "Target 1 friendly House Blackwood unit in Long Range of the Defender. It becomes **Vulnerable**, then performs 1 Charge or Retreat Action."
                     ]
                 }
             ],
